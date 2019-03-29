@@ -22,6 +22,9 @@ public class StatusEnumTest {
         System.out.println(StatusEnum.LOGIN.ordinal());
         System.out.println(StatusEnum.LOGIN.toString());
         System.out.println(StatusEnum.LOGIN.getClass());
+        //测试其他的Enum
+        System.out.println(StatusEnum.LOGOUT);
+        System.out.println(StatusEnum.UNKOWN);
     }
 
     @Test
