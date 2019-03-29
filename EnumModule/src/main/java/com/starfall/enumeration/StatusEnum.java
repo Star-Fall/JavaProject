@@ -14,10 +14,12 @@ public enum StatusEnum {
      * 登录状态
      */
     LOGIN(100, "登录"),
+
     /**
      * 登出状态
      */
     LOGOUT(200, "登出"),
+
     /**
      * 未知状态
      */
