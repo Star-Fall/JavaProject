@@ -23,7 +23,7 @@ public enum StatusEnum {
     /**
      * 未知状态
      */
-    UMKOWN(300, "未知");
+    UNKOWN(300, "未知");
 
     /**
      * 状态代码
