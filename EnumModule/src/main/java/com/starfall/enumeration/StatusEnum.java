@@ -6,24 +6,51 @@ package com.starfall.enumeration;
  * @className: StatusEnum
  * @author: StarFall
  * @date: 2019/3/24 23:45
- * @description: 状态枚举
+ * @description: 状态枚举对象
  */
 public enum StatusEnum {
 
     /**
      * 登录状态
      */
-    LOGIN(100, "登录"),
+    LOGIN(100, "登录") {
+        /**
+         * 自定义的抽象方法需要在枚举对象中重写
+         * @return StatusInfo
+         */
+        @Override
+        public String getStatusInfo() {
+            return this.getCode() + ":" + this.getMsg();
+        }
+    },
 
     /**
      * 登出状态
      */
-    LOGOUT(200, "登出"),
+    LOGOUT(200, "登出") {
+        /**
+         * 自定义的抽象方法需要在枚举对象中重写
+         * @return StatusInfo
+         */
+        @Override
+        public String getStatusInfo() {
+            return this.getCode() + ":" + this.getMsg();
+        }
+    },
 
     /**
      * 未知状态
      */
-    UNKOWN(300, "未知");
+    UNKOWN(300, "未知") {
+        /**
+         * 自定义的抽象方法需要在枚举对象中重写
+         * @return StatusInfo
+         */
+        @Override
+        public String getStatusInfo() {
+            return this.getCode() + ":" + this.getMsg();
+        }
+    };
 
     /**
      * 状态代码
@@ -46,6 +73,13 @@ public enum StatusEnum {
         this.code = code;
         this.msg = msg;
     }
+
+    /**
+     * 自定义的抽象方法
+     *
+     * @return StatusInfo
+     */
+    public abstract String getStatusInfo();
 
     public Integer getCode() {
         return code;
