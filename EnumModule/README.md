@@ -1,5 +1,5 @@
 # JAVA——枚举
-## 详情参看：[blog](https://blog.csdn.net/shaohe18362202126/article/details/86766999)
+#### 详情参看（右键打开）：[blog](https://blog.csdn.net/shaohe18362202126/article/details/86766999)
 ## 一、枚举基本用法
 ### 1、枚举示例
 >具体示例代码：**com.starfall.enumeration.StatusEnum**
@@ -69,7 +69,7 @@
 + **Enum<E>[] values()：** 获取枚举类中的所有变量，并作为数组返回
 + **Enum<E> valuesOf(String arg)：** 据名称获取枚举变量
 
-####2.2、获取所有的枚举对象
+#### 2.2、获取所有的枚举对象
 >+ values()方法和valueOf(String name)方法是我们具体实现的枚举StatusEnum中所包含的静态方法，在java.lang.Enum中是不包含values()方法的。
 >+ 如果我们将枚举实例向上转型为Enum，那么values()方法将无法被调用
 ```java
@@ -90,7 +90,7 @@
         }
     }
 ```
-####2.3、自定义的抽象方法
+#### 2.3、自定义的抽象方法
 ```java
     /**
      * 测试自定义的抽象方法
