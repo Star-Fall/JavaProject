@@ -57,7 +57,7 @@
     },
 ```
 ### 2、常用API
->具体示例代码：**com.starfall.enumeration.test.StatusEnumTest**
+>具体测试代码：**com.starfall.enumeration.test.StatusEnumTest**
 #### 2.1、API说明
 + **int compareTo(E o) ：** 比较此枚举与指定对象的顺序。
 + **Class<E> getDeclaringClass() ：** 返回与此枚举常量的枚举类型相对应的 Class 对象。
@@ -105,3 +105,33 @@
         }
     }
 ```
+## 二、枚举高级用法
+>参考: https://blog.csdn.net/javazejian/article/details/71333103
+### 1、枚举与接口
+#### 示例
+>具体示例代码：com.starfall.enumeration.interfaces.Food
+
++ 对一组数据进行分类总的食物菜单为Food类型，菜单下面一级分类为：appetizer(开胃菜)、mainCourse(主菜)、dessert(点心)、Coffee
++ 对于接口来说，枚举中的对象就是声明在接口中，各个枚举只是起到了分组的作用
+
+#### 使用
+>具体测试代码：com.starfall.enumeration.test.FoodTest
+
+
+### 2、对接口的再次封装
+对Food接口进一步的封装
+>具体示例代码：com.starfall.enumeration.interfaces.Meal
+
+>具体测试代码：com.starfall.enumeration.test.MealTest
+
+## 三、EnumSet&&EnumMap
+### 1、EnumSet
++ EnumSet是与枚举类型一起使用的专用 Set 集合，EnumSet 中所有元素都必须是枚举类型。与其他Set接口的实现类HashSet/TreeSet(内部都是用对应的HashMap/TreeMap实现的)不同的是，EnumSet在内部实现是位向量。
++ 注意EnumSet不允许使用 null 元素。试图插入 null 元素将抛出 NullPointerException，但试图测试判断是否存在null 元素或移除 null 元素则不会抛出异常，与大多数collection 实现一样，EnumSet不是线程安全的，因此在多线程环境下应该注意数据同步问题
+>具体测试代码：com.starfall.enumeration.test.EnumPlusTest.testEnumSet()
+
+### 2、EnumMap
++ EnumMap作为枚举的专属的集合，EnumMap要求其Key必须为Enum类型，EnumMap与HashMap相比效率更高，因为其内部是通过数组实现的。
++ EnumMap的key值不能为null，虽说是枚举专属集合，但其操作与一般的Map差不多。它只能接收同一枚举类型的实例作为键值且不能为null，由于枚举类型实例的数量相对固定并且有限，所以EnumMap使用数组来存放与枚举类型对应的值，毕竟数组是一段连续的内存空间，根据程序局部性原理，效率会相当高。
+
+>具体测试代码：com.starfall.enumeration.test.EnumPlusTest.testEnumMap()
