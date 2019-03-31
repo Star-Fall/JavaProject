@@ -3,10 +3,10 @@ package com.starfall.enumeration.interfaces;
 /**
  * @project： JavaProject
  * @package： com.starfall.enumeration.interfaces
- * @className: Meal
- * @author: StarFall
- * @date: 2019/3/31 22:42
- * @description: 对Food接口进一步的封装
+ * @className： Meal
+ * @author： StarFall
+ * @date： 2019/3/31 22:42
+ * @description： 对Food接口进一步的封装
  */
 public enum Meal {
 

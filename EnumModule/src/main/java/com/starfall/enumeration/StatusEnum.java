@@ -3,10 +3,10 @@ package com.starfall.enumeration;
 /**
  * @project： JavaProject
  * @package： com.starfall.enumeration
- * @className: StatusEnum
- * @author: StarFall
- * @date: 2019/3/24 23:45
- * @description: 状态枚举对象
+ * @className： StatusEnum
+ * @author： StarFall
+ * @date： 2019/3/24 23:45
+ * @description： 状态枚举对象
  */
 public enum StatusEnum {
 
@@ -69,7 +69,7 @@ public enum StatusEnum {
      * @param code 状态代码
      * @param msg  状态信息
      */
-    private StatusEnum(Integer code, String msg) {
+    StatusEnum(Integer code, String msg) {
         this.code = code;
         this.msg = msg;
     }

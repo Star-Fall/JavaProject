@@ -8,10 +8,10 @@ import java.util.Arrays;
 /**
  * @project： JavaProject
  * @package： com.starfall.enumeration.test
- * @className: StatusEnumTest
- * @author: StarFall
- * @date: 2019/3/27 21:54
- * @description: 枚举对象StatusEnum的测试方法
+ * @className： StatusEnumTest
+ * @author： StarFall
+ * @date： 2019/3/27 21:54
+ * @description： 枚举对象StatusEnum的测试方法
  */
 public class StatusEnumTest {
 
