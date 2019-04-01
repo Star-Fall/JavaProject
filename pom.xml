@@ -11,6 +11,7 @@
     <modules>
         <module>DesignPatterns</module>
         <module>EnumModule</module>
+        <module>UtilModule</module>
     </modules>
     <!--解决IDAE在Maven test 输出信息中文乱码-->
     <properties>
