@@ -3,9 +3,7 @@ package com.starfall.util.date.test;
 import com.starfall.util.date.DateUtil;
 import org.junit.Test;
 
-import java.util.Calendar;
 import java.util.Date;
-import java.util.Locale;
 
 /**
  * @project： JavaProject
@@ -22,7 +20,7 @@ public class DateUtilTest {
         System.out.println(DateUtil.getYear(new Date()));
         System.out.println(DateUtil.getMonth(new Date()));
         System.out.println(DateUtil.getDay(new Date()));
-        System.out.println(DateUtil.getMonth(null));
+        //System.out.println(DateUtil.getMonth(null));
     }
 
 }
