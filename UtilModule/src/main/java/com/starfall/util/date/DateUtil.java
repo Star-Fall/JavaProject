@@ -4,6 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * @project： JavaProject
@@ -22,7 +23,7 @@ public class DateUtil {
      * @return 年份
      */
     public static int getYear(Date date) {
-        Calendar calendar = Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance(Locale.CHINA);
         calendar.setTime(date);
         return calendar.get(Calendar.YEAR);
     }
@@ -34,7 +35,7 @@ public class DateUtil {
      * @return 月份
      */
     public static int getMonth(Date date) {
-        Calendar calendar = Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance(Locale.CHINA);
         calendar.setTime(date);
         return calendar.get(Calendar.MONTH) + 1;
     }
@@ -46,9 +47,28 @@ public class DateUtil {
      * @return 日期
      */
     public static int getDay(Date date) {
-        Calendar calendar = Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance(Locale.CHINA);
         calendar.setTime(date);
         return calendar.get(Calendar.DAY_OF_MONTH);
+    }
+
+    /**
+     * 获取指定时间的WeekDay
+     *
+     * @param date 指定时间
+     * @return WeekDay枚举
+     * @see com.starfall.util.date.WeekDay
+     */
+    public static WeekDay getWeekDay(Date date) {
+        Calendar calendar = Calendar.getInstance(Locale.CHINA);
+        calendar.setTime(date);
+        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+        for (WeekDay day : WeekDay.values()) {
+            if (day.ordinal() == (dayOfWeek - 1)) {
+                return day;
+            }
+        }
+        return null;
     }
 
     /**
