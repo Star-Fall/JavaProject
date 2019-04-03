@@ -13,52 +13,42 @@ public enum WeekDay {
     /**
      * 星期日
      */
-    SUNDAY("星期日", "Sunday"),
+    SUNDAY("星期日"),
     /**
      * 星期一
      */
-    MONDAY("星期一", "Monday"),
+    MONDAY("星期一"),
     /**
      * 星期二
      */
-    TUESDAY("星期二", "Tuesday"),
+    TUESDAY("星期二"),
     /**
      * 星期三
      */
-    WEDNESDAY("星期三", "Wednesday"),
+    WEDNESDAY("星期三"),
     /**
      * 星期四
      */
-    THURSDAY("星期四", "Thursday"),
+    THURSDAY("星期四"),
     /**
      * 星期五
      */
-    FRIDAY("星期五", "Friday"),
+    FRIDAY("星期五"),
     /**
      * 星期六
      */
-    SATURDAY("星期六", "Saturday");
+    SATURDAY("星期六");
 
     /**
-     * 中文描述
+     * 描述
      */
-    private String desc_CN;
+    private String desc;
 
-    /**
-     * Englis description
-     */
-    private String desc_EN;
-
-    WeekDay(String desc_CN, String desc_EN) {
-        this.desc_CN = desc_CN;
-        this.desc_EN = desc_EN;
+    WeekDay(String desc) {
+        this.desc = desc;
     }
 
-    public String getDesc_CN() {
-        return desc_CN;
-    }
-
-    public String getDesc_EN() {
-        return desc_EN;
+    public String getDesc() {
+        return desc;
     }
 }
