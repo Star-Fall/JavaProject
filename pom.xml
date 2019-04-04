@@ -16,6 +16,8 @@
     <!--解决IDAE在Maven test 输出信息中文乱码-->
     <properties>
         <argLine>-Dfile.encoding=UTF-8</argLine>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
