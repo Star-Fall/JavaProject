@@ -22,8 +22,8 @@ public class DateUtilTest {
         System.out.println(DateUtil.getDay(new Date()));
         //System.out.println(DateUtil.getMonth(null));
         System.out.println(DateUtil.getWeekDay(new Date()));
-        System.out.println(DateUtil.getWeekDay(new Date()).getDesc_CN());
-        System.out.println(DateUtil.getWeekDay(new Date()).getDesc_EN());
+        System.out.println(DateUtil.getWeekDay(new Date()).getDescCN());
+        System.out.println(DateUtil.getWeekDay(new Date()).getDescEN());
     }
 
     @Test

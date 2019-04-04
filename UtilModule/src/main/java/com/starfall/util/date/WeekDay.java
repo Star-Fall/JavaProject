@@ -42,23 +42,23 @@ public enum WeekDay {
     /**
      * 中文描述
      */
-    private String desc_CN;
+    private String descCN;
 
     /**
      * Englis description
      */
-    private String desc_EN;
+    private String descEN;
 
-    WeekDay(String desc_CN, String desc_EN) {
-        this.desc_CN = desc_CN;
-        this.desc_EN = desc_EN;
+    WeekDay(String descCN, String descEN) {
+        this.descCN = descCN;
+        this.descEN = descEN;
     }
 
-    public String getDesc_CN() {
-        return desc_CN;
+    public String getDescCN() {
+        return descCN;
     }
 
-    public String getDesc_EN() {
-        return desc_EN;
+    public String getDescEN() {
+        return descEN;
     }
 }
