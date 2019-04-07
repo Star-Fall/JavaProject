@@ -1,12 +1,12 @@
 package com.starfall.enumeration.interfaces;
 
 /**
- * @project： JavaProject
- * @package： com.starfall.enumeration.interfaces
- * @className： Food
- * @author： StarFall
- * @date： 2019/3/31 22:15
- * @description： 食物菜单Food, 枚举中的对象就是声明在接口中，各个枚举只是起到了分组的作用。
+ * @project JavaProject
+ * @package com.starfall.enumeration.interfaces
+ * @className Food
+ * @author StarFall
+ * @date 2019/3/31 22:15
+ * @description 食物菜单Food, 枚举中的对象就是声明在接口中，各个枚举只是起到了分组的作用。
  */
 public interface Food {
 

@@ -1,12 +1,12 @@
 package com.starfall.util.date;
 
 /**
- * @project： JavaProject
- * @package： com.starfall.util.date
- * @className： WeekDay
- * @author： StarFall
- * @date： 2019/4/3 15:16
- * @description： 星期枚举对象
+ * @project JavaProject
+ * @package com.starfall.util.date
+ * @className WeekDay
+ * @author StarFall
+ * @date 2019/4/3 15:16
+ * @description 星期枚举对象
  */
 public enum WeekDay {
 

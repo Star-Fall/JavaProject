@@ -1,12 +1,12 @@
 package com.starfall.enumeration;
 
 /**
- * @project： JavaProject
- * @package： com.starfall.enumeration
- * @className： StatusEnum
- * @author： StarFall
- * @date： 2019/3/24 23:45
- * @description： 状态枚举对象
+ * @project JavaProject
+ * @package com.starfall.enumeration
+ * @className StatusEnum
+ * @author StarFall
+ * @date 2019/3/24 23:45
+ * @description 状态枚举对象
  */
 public enum StatusEnum {
 

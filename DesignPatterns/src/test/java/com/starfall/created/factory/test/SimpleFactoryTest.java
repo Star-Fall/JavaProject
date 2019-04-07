@@ -5,12 +5,12 @@ import com.starfall.created.factory.simplefactory.ProductFactory;
 import org.junit.Test;
 
 /**
- * @project： JavaProject
- * @package： com.starfall.created.factory.test
- * @className： SimpleFactoryTest
- * @author： StarFall
- * @date： 2019/4/1 23:21
- * @description： 简单工厂测试端
+ * @project JavaProject
+ * @package com.starfall.created.factory.test
+ * @className SimpleFactoryTest
+ * @author StarFall
+ * @date 2019/4/1 23:21
+ * @description 简单工厂测试端
  */
 public class SimpleFactoryTest {
     /**

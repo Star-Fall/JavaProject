@@ -6,12 +6,12 @@ import org.junit.Test;
 import java.util.*;
 
 /**
- * @project： JavaProject
- * @package： com.starfall.enumeration.test
- * @className： EnumPlusTest
- * @author： StarFall
- * @date： 2019/3/31 23:00
- * @description： EnumSet&EnumMap的用法测试
+ * @project JavaProject
+ * @package com.starfall.enumeration.test
+ * @className EnumPlusTest
+ * @author StarFall
+ * @date 2019/3/31 23:00
+ * @description EnumSet&EnumMap的用法测试
  */
 public class EnumPlusTest {
 

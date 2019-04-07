@@ -7,12 +7,12 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * @project： JavaProject
- * @package： com.starfall.util.date
- * @className： DateUtil
- * @author： StarFall
- * @date： 2019/4/1 23:52
- * @description： Date工具类
+ * @project JavaProject
+ * @package com.starfall.util.date
+ * @className DateUtil
+ * @author StarFall
+ * @date 2019/4/1 23:52
+ * @description Date工具类
  */
 public class DateUtil {
 

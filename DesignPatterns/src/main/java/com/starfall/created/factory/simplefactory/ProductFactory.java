@@ -1,12 +1,12 @@
 package com.starfall.created.factory.simplefactory;
 
 /**
- * @project： JavaProject
- * @package： com.starfall.created.factory.simplefactory
- * @className： ProductFactory
- * @author： StarFall
- * @date： 2019/4/1 23:12
- * @description： 3、工厂角色
+ * @project JavaProject
+ * @package com.starfall.created.factory.simplefactory
+ * @className ProductFactory
+ * @author StarFall
+ * @date 2019/4/1 23:12
+ * @description 3、工厂角色
  */
 public class ProductFactory {
 
