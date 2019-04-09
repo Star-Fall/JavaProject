@@ -4,6 +4,7 @@ import com.starfall.util.date.DateUtil;
 import org.junit.Test;
 
 import java.util.Date;
+import java.util.Objects;
 
 /**
  * @author StarFall
@@ -17,13 +18,22 @@ public class DateUtilTest {
 
     @Test
     public void getDateTest() {
-        System.out.println(DateUtil.getYear(new Date()));
-        System.out.println(DateUtil.getMonth(new Date()));
-        System.out.println(DateUtil.getDay(new Date()));
+        Date date=new Date();
+        System.out.println(DateUtil.getYear(date));
+        System.out.println(DateUtil.getMonth(date));
+        System.out.println(DateUtil.getDay(date));
         //System.out.println(DateUtil.getMonth(null));
-        System.out.println(DateUtil.getWeekDay(new Date()));
-        System.out.println(DateUtil.getWeekDay(new Date()).getDescCN());
-        System.out.println(DateUtil.getWeekDay(new Date()).getDescEN());
+        System.out.println(DateUtil.getWeekDay(date));
+        System.out.println(Objects.requireNonNull(DateUtil.getWeekDay(date)).getDescCN());
+        System.out.println(Objects.requireNonNull(DateUtil.getWeekDay(date)).getDescEN());
+        //test Season
+        System.out.println(DateUtil.getSeason(date));
+        System.out.println(Objects.requireNonNull(DateUtil.getSeason(date)).getDescCN());
+        System.out.println(Objects.requireNonNull(DateUtil.getSeason(date)).getDescEN());
+
+
+        date=DateUtil.addMonths(date,8);
+        System.out.println(DateUtil.getSeason(date));
     }
 
     @Test

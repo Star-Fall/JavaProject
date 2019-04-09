@@ -1,5 +1,7 @@
 package com.starfall.util.date;
 
+import com.starfall.common.CommonConstant;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -67,6 +69,27 @@ public class DateUtil {
             if (day.ordinal() == (dayOfWeek - 1)) {
                 return day;
             }
+        }
+        return null;
+    }
+
+    /**
+     * 获取指定时间的 Season
+     *
+     * @param date 指定时间
+     * @return Season枚举
+     * @see com.starfall.util.date.Season
+     */
+    public static Season getSeason(Date date) {
+        int month = getMonth(date);
+        if (month >= CommonConstant.NUM_THREE && month <= CommonConstant.NUM_FIVE) {
+            return Season.SPRING;
+        } else if (month > CommonConstant.NUM_FIVE && month <= CommonConstant.NUM_EIGHT) {
+            return Season.SUMMER;
+        } else if (month > CommonConstant.NUM_EIGHT && month <= CommonConstant.NUM_ELEVEN) {
+            return Season.AUTUMN;
+        } else if (month == CommonConstant.NUM_ONE || month == CommonConstant.NUM_TWO || month == CommonConstant.NUM_TWELVE) {
+            return Season.WINTER;
         }
         return null;
     }
