@@ -43,6 +43,24 @@ public class DateUtil {
     }
 
     /**
+     * 获取指定时间的月份枚举
+     *
+     * @param date 指定时间
+     * @return 月份枚举
+     */
+    public static Month getMonthEnum(Date date) {
+        Calendar calendar = Calendar.getInstance(Locale.CHINA);
+        calendar.setTime(date);
+        int monthIndex = calendar.get(Calendar.MONTH);
+        for (Month month : Month.values()) {
+            if (monthIndex == month.ordinal()) {
+                return month;
+            }
+        }
+        return null;
+    }
+
+    /**
      * 获取指定时间的日期
      *
      * @param date 指定时间

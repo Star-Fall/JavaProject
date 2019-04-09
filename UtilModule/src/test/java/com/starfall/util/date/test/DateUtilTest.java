@@ -18,22 +18,29 @@ public class DateUtilTest {
 
     @Test
     public void getDateTest() {
-        Date date=new Date();
+        Date date = new Date();
+        //test getYear、getMonth、getDay
         System.out.println(DateUtil.getYear(date));
         System.out.println(DateUtil.getMonth(date));
         System.out.println(DateUtil.getDay(date));
-        //System.out.println(DateUtil.getMonth(null));
+        //test getWeekDay
         System.out.println(DateUtil.getWeekDay(date));
         System.out.println(Objects.requireNonNull(DateUtil.getWeekDay(date)).getDescCN());
         System.out.println(Objects.requireNonNull(DateUtil.getWeekDay(date)).getDescEN());
-        //test Season
+        //test getSeason
         System.out.println(DateUtil.getSeason(date));
         System.out.println(Objects.requireNonNull(DateUtil.getSeason(date)).getDescCN());
         System.out.println(Objects.requireNonNull(DateUtil.getSeason(date)).getDescEN());
-
-
-        date=DateUtil.addMonths(date,8);
+        date = DateUtil.addMonths(date, 8);
         System.out.println(DateUtil.getSeason(date));
+        //test getMonthEnum
+        date = new Date();
+        System.out.println(DateUtil.getMonthEnum(date));
+        System.out.println(Objects.requireNonNull(DateUtil.getMonthEnum(date)).getDescCN());
+        System.out.println(Objects.requireNonNull(DateUtil.getMonthEnum(date)).getDescEN());
+        date = DateUtil.addMonths(date, 2);
+        System.out.println(Objects.requireNonNull(DateUtil.getMonthEnum(date)).getDescCN());
+
     }
 
     @Test
