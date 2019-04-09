@@ -45,7 +45,7 @@ public enum WeekDay {
     private String descCN;
 
     /**
-     * Englis description
+     * English description
      */
     private String descEN;
 

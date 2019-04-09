@@ -33,7 +33,7 @@ public enum Season {
     private String descCN;
 
     /**
-     * Englis description
+     * English description
      */
     private String descEN;
 
@@ -48,4 +48,5 @@ public enum Season {
 
     public String getDescEN() {
         return descEN;
-    }}
+    }
+}
