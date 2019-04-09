@@ -13,19 +13,19 @@ public enum Season {
     /**
      * 春季（第一季度）
      */
-    SPRING("春季", "spring"),
+    SPRING("春季", "Spring"),
     /**
      * 夏季（第二季度）
      */
-    SUMMER("夏季", "summer"),
+    SUMMER("夏季", "Summer"),
     /**
      * 秋季（第三季度）
      */
-    AUTUMN("秋季", "autumn"),
+    AUTUMN("秋季", "Autumn"),
     /**
      * 冬季（第四季度）
      */
-    WINTER("冬季", "winter");
+    WINTER("冬季", "Winter");
 
     /**
      * 中文描述
