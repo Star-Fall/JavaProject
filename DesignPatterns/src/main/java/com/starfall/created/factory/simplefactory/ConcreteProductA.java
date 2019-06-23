@@ -10,8 +10,8 @@ package com.starfall.created.factory.simplefactory;
  */
 public class ConcreteProductA implements Product {
 
-    @Override
-    public void productMethod() {
-        System.out.println("具体的产品角色：" + this.getClass().getName());
-    }
+	@Override
+	public void productMethod() {
+		System.out.println("具体的产品角色：" + this.getClass().getName());
+	}
 }

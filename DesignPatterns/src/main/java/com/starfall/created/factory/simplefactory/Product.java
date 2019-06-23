@@ -10,8 +10,8 @@ package com.starfall.created.factory.simplefactory;
  */
 public interface Product {
 
-    /**
-     * 产品方法
-     */
-    void productMethod();
+	/**
+	 * 产品方法
+	 */
+	void productMethod();
 }

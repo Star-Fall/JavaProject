@@ -13,18 +13,18 @@ import org.junit.Test;
  * @description 简单工厂测试端
  */
 public class SimpleFactoryTest {
-    /**
-     * 测试抽象产品简单工厂
-     */
-    @Test
-    public void testProduct() {
-        //1、创建工厂
-        ProductFactory factory = new ProductFactory();
-        //2、调用工厂方法生产产品
-        Product product = factory.produceProduct("A");
-        //3、产品对象执行方法
-        product.productMethod();
-        product = factory.produceProduct("B");
-        product.productMethod();
-    }
+	/**
+	 * 测试抽象产品简单工厂
+	 */
+	@Test
+	public void testProduct() {
+		// 1、创建工厂
+		ProductFactory factory = new ProductFactory();
+		// 2、调用工厂方法生产产品
+		Product product = factory.produceProduct("A");
+		// 3、产品对象执行方法
+		product.productMethod();
+		product = factory.produceProduct("B");
+		product.productMethod();
+	}
 }

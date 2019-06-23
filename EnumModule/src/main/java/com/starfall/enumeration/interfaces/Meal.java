@@ -10,42 +10,43 @@ package com.starfall.enumeration.interfaces;
  */
 public enum Meal {
 
-    /**
-     * appetizer(开胃菜)
-     */
-    APPETIZER(Food.Appetizer.class),
+	/**
+	 * appetizer(开胃菜)
+	 */
+	APPETIZER(Food.Appetizer.class),
 
-    /**
-     * mainCourse(主菜)
-     */
-    MAINCOURSE(Food.MainCourse.class),
+	/**
+	 * mainCourse(主菜)
+	 */
+	MAINCOURSE(Food.MainCourse.class),
 
-    /**
-     * dessert(点心)
-     */
-    DESSERT(Food.Dessert.class),
+	/**
+	 * dessert(点心)
+	 */
+	DESSERT(Food.Dessert.class),
 
-    /**
-     * coffee(咖啡)
-     */
-    COFFEE(Food.Coffee.class);
+	/**
+	 * coffee(咖啡)
+	 */
+	COFFEE(Food.Coffee.class);
 
-    /**
-     * 声明Meal的属性，获取指定类型的Food实例
-     */
-    private final Food[] foods;
+	/**
+	 * 声明Meal的属性，获取指定类型的Food实例
+	 */
+	private final Food[] foods;
 
-    /**
-     * 自定义的构造方法，通过class对象获取枚举实例
-     *
-     * @param kind Meal对象
-     */
-    Meal(Class<? extends Food> kind) {
-        // 通过class对象获取枚举实例
-        foods = kind.getEnumConstants();
-    }
+	/**
+	 * 自定义的构造方法，通过class对象获取枚举实例
+	 *
+	 * @param kind
+	 *            Meal对象
+	 */
+	Meal(Class<? extends Food> kind) {
+		// 通过class对象获取枚举实例
+		foods = kind.getEnumConstants();
+	}
 
-    public Food[] getFoods() {
-        return foods;
-    }
+	public Food[] getFoods() {
+		return foods;
+	}
 }

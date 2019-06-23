@@ -13,14 +13,14 @@ import org.junit.Test;
  */
 public class FoodTest {
 
-    /**
-     * 测试Food用法
-     */
-    @Test
-    public void testFood() {
-        Food food = Food.Appetizer.SALAD;
-        System.out.println(food);
-        food = Food.Coffee.BLACK_COFFEE;
-        System.out.println(food);
-    }
+	/**
+	 * 测试Food用法
+	 */
+	@Test
+	public void testFood() {
+		Food food = Food.Appetizer.SALAD;
+		System.out.println(food);
+		food = Food.Coffee.BLACK_COFFEE;
+		System.out.println(food);
+	}
 }
